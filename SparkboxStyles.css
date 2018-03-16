@@ -1,0 +1,640 @@
+    @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+    html{
+        font-family: sans-serif;
+    }
+    body{
+        display: flex;
+        flex: auto;
+        flex-direction:  column;
+        margin: 0;
+    }
+    a{
+        margin-right: 25px;
+    }
+
+
+
+    .MenuBar{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 15px;
+
+    }
+    .LogoLeft{
+        height: 35px;
+        margin-left: 30px;
+        opacity: 0.7;
+
+    }
+    .MenuItem{
+        color: #000000;
+        font-size: 15px ;
+        font-family: Arial;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        opacity: 0.7;
+        padding-top: 10px;
+        text-align: end;
+        text-decoration: none;
+
+    }
+    .MenuItem:hover{
+        border-bottom: 2px solid #800080;
+        color: #000000;
+        font-size: 15px ;
+        font-family: Arial;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        opacity: 0.7;
+        padding-top: 10px;
+        text-align: end;
+        text-decoration: none;
+
+    }
+    .MainLogo:hover{
+        opacity: 0.5;
+    }
+    .DropdownMenuItem{
+        color: #000000;
+        font-size: 25px ;
+        font-family: Arial;
+        font-weight:800;
+        letter-spacing: 2px;
+        opacity: 0.7;
+        padding-top: 10px;
+        text-decoration: none;
+        text-align: end;
+    }
+    .SpecialMenuItem{
+        background: #a3dae3;
+        padding: 10px 7px 10px 7px;
+    }
+    .SpecialMenuItem:hover{
+        background: rgba(234, 255, 255, 0.99);
+        padding: 10px 7px 10px 7px;
+    }
+    .ContentPart{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 17%;
+    }
+    .thirdlinetxt{
+        color: #ffffff;
+        flex-basis:content-box ;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+
+    }
+    .FirstPanel{
+        align-items: center;
+        background: #e5e5e5;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 10%;
+
+    }
+    .FirstPanelColumns{
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 3%;
+        justify-content: space-around;
+    }
+    .SecondPanel{
+        align-items: center;
+        background: #d9d9d9;
+        display: flex;
+        flex-direction: column;
+    }
+    .ScndPanFrstLine{
+        alignment: center;
+        text-align: center;
+        color: #1c4c55;
+        font-size: 22px;
+        font-family: Bowlby+One+SC;
+        font-weight: bolder;
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+    .ScndPanScndLine{
+        color: #1c4c55;
+        font-size: 17px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+
+    }
+    .container{
+        display: flex;
+        flex-basis: 80%;
+    }
+    .HumanImg {
+        margin-top: 4%;
+        padding-left: 8%;
+        grid-area: 1/1/2/2;
+        width: 170px;
+    }
+    @keyframes menu {
+        from{height: 0px; }
+        to {height:  275px;}
+
+    }
+    @keyframes menuitem {
+        from{font-size: 0px; padding-top: 0px ;}
+        to {font-size: 15px; padding-top: 10px;}
+
+    }
+
+
+    .ThirthPanelHeaderLine{
+        grid-area: 2/1/3/2;
+        font-size: 35px;
+        font-weight: bolder;
+        padding-left: 8%;
+
+    }
+    @media (min-width: 360px) {
+        .LogoRight{
+            height: 35px;
+            opacity: 0.7;
+        }
+
+    }
+    @media (max-width: 360px) {
+        .LogoRight{
+           display: none;
+        }
+
+    }
+    @media (min-width: 1000px) {
+
+        .ThirthPanel{
+            background: #ffffff;
+            display: grid;
+            grid-template:  10% 10% 25% 30% 5% 20%/2fr 1fr;
+
+        }
+        .ThirthPanelFirstLine{
+            font-size: 17px;
+            flex-basis: 30%;
+            grid-area: 3/1/4/2;
+            margin-top: -1%;
+            padding-left: 8%;
+            padding-right: 45%;
+
+        }
+        .FullPhone{
+
+            margin-left: -40%;
+            padding-top: 15%;
+            width: 300px;
+
+        }
+        .Sect{
+            background: url(Images/Back.png)no-repeat center center;
+            grid-area: 1/2/7/3;
+
+        }
+        .MiddleNote{
+            color: #3ea9be;
+            font-size: 17px;
+            font-weight: bolder;
+            flex-basis: 30%;
+            grid-area: 4/1/5/2;
+            padding-left: 8%;
+            padding-right: 45%;
+
+        }
+        .BoottomNote{
+            font-size: 12px;
+            font-weight: bolder;
+            flex-basis: 30%;
+            grid-area: 5/1/6/2;
+            padding-left: 8%;
+            padding-right: 45%;
+        }
+        .BottomBut{
+            border: 4px solid #50b7c8;
+            color: #50b7c8;
+            font-size: 20px;
+            font-weight: 700;
+            grid-area: 6/1/7/2;
+            height: 30px;
+            margin-left: 8%;
+            padding-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            width: 150px;
+
+        }
+        .BottomBut:hover{
+            border: 4px solid #50b7c8;
+            background: #50b7c8;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+            grid-area: 6/1/7/2;
+            height: 30px;
+            margin-left: 8%;
+            padding-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            width: 150px;
+
+        }
+        .MiddleImage{
+            display: none;
+        }
+        .Menu1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .Navigation{
+            display: none;
+        }
+        .DropdownMenu{
+            display: none;
+        }
+
+
+    }
+    @media (min-width: 650px) and (max-width: 1000px){
+        .ThirthPanel{
+            background: #ffffff;
+            display: grid;
+            grid-template:  10% 10% 25% 30% 5% 20%/2fr 1fr;
+
+        }
+        .ThirthPanelFirstLine{
+            font-size: 17px;
+            flex-basis: 30%;
+            grid-area: 3/1/4/3;
+            margin-top: -1%;
+            padding-left: 6%;
+            max-width: 740px;
+            width: auto;
+
+
+        }
+        .Sect{
+            display: none;
+
+        }
+        .MiddleNote{
+            color: #3ea9be;
+            font-size: 17px;
+            font-weight: bolder;
+            flex-basis: 30%;
+            grid-area: 4/1/5/2;
+            padding-left: 8%;
+            padding-right: 35%;
+
+        }
+        .BoottomNote{
+            font-size: 12px;
+            font-weight: bolder;
+            flex-basis: 30%;
+            grid-area: 5/1/6/2;
+            padding-left: 8%;
+            padding-right: 45%;
+        }
+        .MiddleImage{
+            display: block;
+            grid-area: 4/2/7/3;
+            margin-left: -40%;
+            width: 110%;
+
+        }
+        .Menu1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .Navigation{
+            display: none;
+        }
+        .DropdownMenu{
+            display: none;
+        }
+        .BottomBut{
+            border: 4px solid #50b7c8;
+            color: #50b7c8;
+            font-size: 20px;
+            font-weight: 700;
+            grid-area: 6/1/7/2;
+            height: 30px;
+            margin-left: 8%;
+            margin-bottom: 8%;
+            padding-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            width: 150px;
+
+        }
+        .BottomBut:hover{
+            border: 4px solid #50b7c8;
+            background: #50b7c8;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+            grid-area: 6/1/7/2;
+            height: 30px;
+            margin-left: 8%;
+            margin-bottom: 8%;
+            padding-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            width: 150px;
+
+        }
+
+    }
+    @media (max-width: 650px) {
+
+        .ThirthPanel{
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+        .ThirthPanelFirstLine{
+            font-size: 17px;
+            flex-basis: 30%;
+
+            margin-top: -1%;
+            padding-left: 6%;
+            padding-right: 6%;
+            width: auto;
+
+
+        }
+        .Sect{
+            display: none;
+
+        }
+        .MiddleNote{
+            align-self: center;
+            color: #3ea9be;
+            font-size: 17px;
+            font-weight: bolder;
+            flex-basis: 30%;
+            padding-left: 8%;
+            padding-right: 8%;
+            padding-top: 5%;
+
+        }
+        .BoottomNote{
+            font-size: 12px;
+            font-weight: bolder;
+            flex-basis: 30%;
+            align-self: center;
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+        .MiddleImage{
+            display: block;
+            align-self: center;
+            width: 80%;
+
+        }
+        .Menu1{
+            display: none;
+        }
+        .Navigation{
+            color: #000000;
+            font-weight: 800;
+            font-size: 12px;
+            letter-spacing: 5px;
+            margin-right: 20px;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+        .DropdownMenu{
+            display: none;
+        }
+        .Navigation:focus ~ .DropdownMenu,
+        .Navigation:active ~ .DropdownMenu,
+        .DropdownMenu:hover{
+
+            background: #d5f2f7;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            animation: menu  500ms 1 linear;
+            animation: menuitem  500ms 1 linear;
+
+        }
+        .BottomBut{
+            align-self: center;
+            border: 4px solid #50b7c8;
+            color: #50b7c8;
+            font-size: 20px;
+            font-weight: 700;
+            grid-area: 6/1/7/2;
+            height: 30px;
+            margin-left: 8%;
+            margin-bottom: 8%;
+            margin-top: 4%;
+            padding-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            width: 150px;
+
+        }
+        .BottomBut:hover{
+            align-self: center;
+            border: 4px solid #50b7c8;
+            background: #50b7c8;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+            grid-area: 6/1/7/2;
+            height: 30px;
+            margin-left: 8%;
+            margin-bottom: 8%;
+            margin-top: 4%;
+            padding-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            width: 150px;
+
+        }
+
+    }
+
+
+    @media (min-width: 870px) {
+
+    .TopPanel{
+
+        background: #50b7c8 url(Images/BackPlane.png)  no-repeat center center;
+        background-size: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .scndlinetxt{
+        color: #1c4c55;
+        font-size: 100px;
+        font-weight: bolder;
+        letter-spacing: 7px;
+        margin: 1% auto 2% auto;
+        text-align: center;
+    }
+    .frstlinetxt{
+
+        align-self: center;
+        color: #ffffff;
+        font-weight: bolder;
+        font-size: 25px;
+        letter-spacing: 6px;
+        text-align: center;
+    }
+    .BigLogo{
+        margin-bottom: -170px;
+        vertical-align: bottom;
+        width: 350px;
+        z-index: 2;
+    }
+    .FrstPanelFrstLine{
+        color: #1c4c55;
+        font-size: 48px;
+        font-family: Bowlby+One+SC;
+        font-weight: bolder;
+        margin: 200px 20% 0 20%;
+        text-align: center;
+    }
+    .Column{
+        color: #1c4c55;
+        flex-basis: 45%;
+        font-size: 20px;
+        min-width: 450px;
+        max-width: 600px;
+        margin-bottom: 1%;
+    }
+
+
+}
+
+
+    @media (min-width: 560px ) and (max-width: 870px){
+
+    .TopPanel{
+
+        background: #50b7c8 url(Images/BackPlane.png)  no-repeat center center;
+        background-size: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .scndlinetxt{
+        color: #1c4c55;
+        font-size: 68px;
+        font-weight: bolder;
+        letter-spacing: 7px;
+        margin: 1% auto 2% auto;
+        text-align: center;
+    }
+    .frstlinetxt{
+
+        align-self: center;
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: bolder;
+        letter-spacing: 6px;
+        text-align: center;
+    }
+    .BigLogo{
+        margin-bottom: -120px;
+        vertical-align: bottom;
+        width: 250px;
+        z-index: 2;
+    }
+    .FrstPanelFrstLine{
+        color: #1c4c55;
+        font-size: 28px;
+        font-family: Bowlby+One+SC;
+        font-weight: bolder;
+        margin: 150px 15% 0 15%;
+        text-align: center;
+    }
+    .Column{
+        color: #1c4c55;
+        flex-basis: 75%;
+        font-size: 20px;
+        min-width: 450px;
+        max-width: 600px;
+        margin-bottom: 1%;
+    }
+
+
+}
+
+
+    @media (max-width: 560px ) {
+
+    .TopPanel{
+        background: #50b7c8 url(Images/BackPlane.png)  no-repeat center center;
+        background-size: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .scndlinetxt{
+        color: #1c4c55;
+        font-size: 42px;
+        font-weight: bolder;
+        letter-spacing: 7px;
+        margin: 1% auto 2% auto;
+        text-align: center;
+        text-align: center;
+    }
+    .frstlinetxt{
+        align-self: center;
+        color: #ffffff;
+        font-weight: bolder;
+        font-size: 16px;
+        letter-spacing: 6px;
+        text-align: center;
+    }
+    .BigLogo{
+        margin-bottom: -85px;
+        vertical-align: bottom;
+        width: 180px;
+        z-index: 2;
+    }
+    .FrstPanelFrstLine{
+        color: #1c4c55;
+        font-size: 25px;
+        font-weight: bolder;
+        font-family: Bowlby+One+SC;
+        margin: 110px 7% 0 7%;
+        text-align: center;
+    }
+    .Column{
+        color: #1c4c55;
+        flex-basis: 85%;
+        font-size: 20px;
+        max-width: 600px;
+        margin-bottom: 1%;
+    }
+
+
+
+}
+
